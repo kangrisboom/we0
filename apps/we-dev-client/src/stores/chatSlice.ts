@@ -3,7 +3,7 @@ import ClaudeAI from "@/icon/Claude";
 import DeepSeek from "@/icon/Deepseek";
 import Openrouter from "@/icon/Openrouter";
 import { IModelOption } from "@/components/AiChat/chat";
-import OpenAI from "@/icon/Openai";
+
 export interface FilePreview {
   id: string;
   file: File;
@@ -24,11 +24,6 @@ interface ChatState {
   updateImageStatus: (id: string, status: FilePreview["status"]) => void;
   removeImage: (id: string) => void;
   clearImages: () => void;
-  ollamaConfig: {
-    url: string;
-    apiKey?: string;
-  }
-  setOllamaConfig: (config: { url: string; apiKey?: string }) => void;
 }
 const useChatStore = create<ChatState>((set) => ({
   isDeepThinking: false,
@@ -52,11 +47,7 @@ const useChatStore = create<ChatState>((set) => ({
     })),
   clearImages: () => set({ uploadedImages: [] }),
   modelOptions: [],
-  ollamaConfig: {
-    url: '',
-    apiKey: '',
-  },
-  setOllamaConfig: (config) => set({ ollamaConfig: config }),
+
 }));
 
 export default useChatStore;

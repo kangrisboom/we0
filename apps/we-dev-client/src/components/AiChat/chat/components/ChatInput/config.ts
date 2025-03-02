@@ -9,5 +9,6 @@ export const aiProvierIcon = {
     "deepseek": DeepSeekIcon,
     "claude": ClaudeIcon,
     "ollama": OllamaIcon,
+    "claude37": ClaudeIcon
     "openrouter": OpenRouterIcon,
 }
