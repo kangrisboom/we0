@@ -47,6 +47,7 @@ enum ModelTypes {
   gpt4oMini = "gpt-4o-mini",
   DeepseekR1 = "DeepSeek-R1",
   DeepseekV3 = "deepseek-chat",
+  Openroutergooglegemini20flashthinking = "google/gemini-2.0-flash-thinking-exp:free",
 }
 export interface IModelOption {
   value: string;

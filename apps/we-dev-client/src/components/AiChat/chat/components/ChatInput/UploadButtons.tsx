@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { IModelOption } from "../..";
 import ClaudeAI from "../../../../../icon/Claude";
 import DeepSeek from "../../../../../icon/Deepseek";
+import OpenRouter from "../../../../../icon/Openrouter";
 import useChatStore from "@/stores/chatSlice";
 import { aiProvier, aiProvierIcon, AiProvierIcon } from "./config";
 

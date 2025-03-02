@@ -10,17 +10,17 @@
   "scripts": {
     "dev": "vite",
     "dev:en": "cross-env LANGUAGE=en vite",
+    "dev:id": "cross-env LANGUAGE=id vite",
     "dev:zh": "cross-env LANGUAGE=zh vite",
     "dev:ja": "cross-env LANGUAGE=ja vite",
     "dev:ko": "cross-env LANGUAGE=ko vite",
     "dev:fr": "cross-env LANGUAGE=fr vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --config vite.config.mjs",
     "tsc": "tsc",
-    "builds": "vite build",
     "preview": "vite preview",
     "electron:dev": "vite build",
-    "electron:build": "cross-env ELECTRON=true vite build && electron-builder --dir --config electron-builder.json",
-    "electron:package": "cross-env ELECTRON=true vite build && electron-builder --dir --config electron-builder.json",
+    "electron:build": "cross-env ELECTRON=true vite build --config vite.config.mjs && electron-builder --dir --config electron-builder.json",
+    "electron:package": "cross-env ELECTRON=true vite build --config vite.config.mjs && electron-builder --dir --config electron-builder.json",
     "t:b": "electron-builder --dir --config electron-builder.json",
     "postinstall": "electron-rebuild -f -w node-pty --arch=x64 && vite build && electron-builder install-app-deps"
   },
@@ -119,10 +119,11 @@
       "dist/**/*",
       "dist-electron/**/*"
     ],
-    "mac": {
-      "target": "dir",
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico",
       "arch": [
-        "arm64"
+        "x64", "ia32"
       ]
     }
   }
