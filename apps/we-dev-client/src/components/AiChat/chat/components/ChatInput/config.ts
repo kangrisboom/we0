@@ -2,6 +2,7 @@ import DeepSeekIcon from "@/icon/Deepseek"
 import OpenaiIcon from "@/icon/Openai"
 import ClaudeIcon from "@/icon/Claude"
 import OllamaIcon from "@/icon/Ollama"
+import OpenRouterIcon from "@/icon/Openrouter"
 
 export const aiProvierIcon = {
     "openai": OpenaiIcon,
@@ -9,4 +10,5 @@ export const aiProvierIcon = {
     "claude": ClaudeIcon,
     "ollama": OllamaIcon,
     "claude37": ClaudeIcon
+    "openrouter": OpenRouterIcon,
 }

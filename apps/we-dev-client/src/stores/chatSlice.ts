@@ -1,4 +1,7 @@
 import { create } from "zustand";
+import ClaudeAI from "@/icon/Claude";
+import DeepSeek from "@/icon/Deepseek";
+import Openrouter from "@/icon/Openrouter";
 import { IModelOption } from "@/components/AiChat/chat";
 
 export interface FilePreview {

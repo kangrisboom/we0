@@ -10,6 +10,7 @@ import {
 import type { LanguageModel, Message } from "ai";
 import { modelConfig } from "../model/config";
 import { createDeepSeek } from "@ai-sdk/deepseek";
+import { createOpenRouter } from '@openrouter/ai-sdk-provider';
 
 export const MAX_TOKENS = 5000;
 
@@ -24,6 +25,17 @@ export function getOpenAIModel(baseURL: string, apiKey: string, model: string) {
     });
     const wrapModel =  wrapLanguageModel({
       model: deepseek(model),
+      middleware: extractReasoningMiddleware({ tagName: 'think' }),
+    })
+    return wrapModel;
+  }
+  else if (provider === "openrouter") {
+    const openrouter = createOpenRouter({
+      apiKey,
+      baseURL,
+    });
+    const wrapModel =  wrapLanguageModel({
+      model: openrouter(model),
       middleware: extractReasoningMiddleware({ tagName: 'think' }),
     })
     return wrapModel;

@@ -1,0 +1,155 @@
+{
+    "Welcome to React": "Selamat datang di React",
+    "common": {
+      "cancel": "Batal",
+      "confirm": "Konfirmasi"
+    },
+    "chat": {
+      "tips": {
+        "title": "Selamat datang di we0",
+        "description": "Fitur sketsa d2c hanya tersedia di versi online",
+        "uploadSketch": "Unggah Sketsa",
+        "uploadImg": "Unggah Gambar",
+        "game": "Hasilkan permainan ular",
+        "hello": "Hasilkan halaman yang indah"
+      },
+      "errors": {
+        "file_size_limit": "File {fileName} melebihi batas 5MB",
+        "upload_failed": "Gagal mengunggah",
+        "paste_failed": "Gagal menempel gambar",
+        "add_image_failed": "Gagal menambahkan gambar"
+      },
+      "success": {
+        "images_uploaded": "Gambar berhasil diunggah",
+        "images_uploaded_multiple": "{count} gambar berhasil diunggah",
+        "image_pasted": "Gambar berhasil ditempel",
+        "images_pasted_multiple": "{count} gambar berhasil ditempel",
+        "image_added": "Gambar ditambahkan ke input",
+        "images_added_multiple": "{count} gambar ditambahkan ke input"
+      },
+      "placeholders": {
+        "input": "Masukkan pesan, tekan Enter untuk mengirim, Shift+Enter untuk baris baru...",
+        "tips": "Bagaimana saya bisa membantu Anda? (Tekan Ctrl+V untuk menempel gambar)"
+      },
+      "buttons": {
+        "send": "Kirim",
+        "upload": "Unggah Gambar",
+        "upload_tips": "Klik untuk mengunggah atau menempel gambar",
+        "upload_sketch": "Unggah Sketsa",
+        "upload_sketch_tips": "Klik untuk mengunggah file sketsa",
+        "upload_disabled": "Unggah dinonaktifkan",
+        "upload_image": "Unggah Gambar",
+        "waiting": "Harap tunggu proses saat ini selesai",
+        "not_support_image": "Model saat ini tidak mendukung unggahan gambar",
+        "click_to_upload": "Klik untuk mengunggah atau menempel gambar"
+      },
+      "examples": {
+        "title": "Anda bisa bertanya seperti ini",
+        "prompts": {
+          "todo": "Bangun aplikasi todo menggunakan React dan Tailwind",
+          "blog": "Bangun blog sederhana menggunakan Astro",
+          "cookie": "Buat formulir persetujuan cookie menggunakan Material UI",
+          "game": "Buat game Space Invaders",
+          "center": "Bagaimana cara memusatkan div?"
+        }
+      },
+      "loading": {
+        "generating": "AI sedang menghasilkan respons..."
+      },
+      "modePlaceholders": {
+        "chat": "Ini adalah mode obrolan. Anda dapat langsung berbicara dengan AI dan mendapatkan jawaban yang Anda inginkan.",
+        "builder": "Ini adalah mode pembangun, digunakan untuk membangun proyek Anda melalui dialog"
+      }
+    },
+    "settings": {
+      "title": "Pengaturan",
+      "language": "Bahasa",
+      "general": "Umum",
+      "tokens": "Token",
+      "General": "Umum",
+      "Language": "Bahasa",
+      "keyPlaceholder": "Silakan masukkan kunci API Anda",
+      "save": "Simpan",
+      "themeMode": "Mode Tema",
+      "themeModeLight": "Mode Terang",
+      "themeModeDark": "Mode Gelap"
+    },
+    "preview": {
+      "noserver": "Tidak ada server yang berjalan",
+      "wxminiPreview": "Buka Alat Pengembang Mini Program WeChat untuk pratinjau"
+    },
+    "editor": {
+      "editor": "Editor",
+      "preview": "Pratinjau",
+      "search_in_files": "Cari dalam file..."
+    },
+    "header": {
+      "download": "Unduh Kode",
+      "deploy": "Sebarkan",
+      "open_directory": "Buka Direktori",
+      "error": {
+        "open_directory": "Gagal membuka direktori"
+      }
+    },
+    "explorer": {
+      "clear_all": "Hapus Semua",
+      "explorer": "Penjelajah"
+    },
+    "sidebar": {
+      "start_new_chat": "Mulai Obrolan Baru",
+      "search": "Cari",
+      "chat_history": "Riwayat Obrolan",
+      "my_subscription": "Langganan Saya",
+      "settings": "Pengaturan",
+      "contact_us": "Hubungi Kami",
+      "personal_plan": "Paket Pribadi"
+    },
+    "usage": {
+      "usage": "Penggunaan",
+      "monthly_usage": "Penggunaan Bulanan",
+      "tokens_used": "token telah digunakan",
+      "remaining": "tersisa",
+      "billing_cycle": "Siklus Penagihan",
+      "next_reset": "Reset Berikutnya",
+      "days": "hari",
+      "monthly_limit": "Batas Bulanan",
+      "buy_tokens": "Beli Token Lebih Banyak",
+      "personal_plan": "Paket Pribadi"
+    },
+    "login": {
+      "guest": "Tamu",
+      "title": "Silakan Masuk",
+      "click_to_login": "Klik untuk masuk",
+      "AI_powered_development_platform": "Platform Pengembangan Berbasis AI",
+      "email": "Email",
+      "password": "Kata Sandi",
+      "sign_in": "Masuk",
+      "signing_in": "Memproses masuk...",
+      "remember_me": "Ingat saya",
+      "forgot_password": "Lupa kata sandi",
+      "By_signing_in_you_agree_to_our": "Dengan masuk, Anda setuju dengan",
+      "terms_of_service": "Syarat Layanan",
+      "privacy_policy": "Kebijakan Privasi",
+      "and": "dan",
+      "need_an_account": "Butuh akun",
+      "register": "Daftar",
+      "weChat": "WeChat",
+      "basic_information": "Informasi dasar, avatar, dll.",
+      "continue_with_wechat": "Lanjutkan dengan WeChat",
+      "connecting": "Menghubungkan...",
+      "sign_up_with_wechat": "Daftar dengan WeChat",
+      "WeDev_will_access_the_following_GitHub_information": "WeDev akan mengakses informasi GitHub berikut",
+      "WeDev_will_access_the_following_wechat_information": "WeDev akan mengakses informasi WeChat berikut",
+      "basic_profile": "Profil dasar",
+      "public_repositories": "Repositori publik",
+      "and_Gists": "dan Gists",
+      "continue_with_github": "Lanjutkan dengan GitHub",
+      "chat_limit_reached": "Batas obrolan tercapai",
+      "chat_limit_reached_tips": "Anda telah mencapai batas 3 obrolan gratis. Silakan masuk untuk melanjutkan menggunakan fitur obrolan.",
+      "login": "Masuk",
+      "close": "Tutup"
+    },
+    "sketch": {
+      "title": "Editor Sketsa"
+    }
+  }

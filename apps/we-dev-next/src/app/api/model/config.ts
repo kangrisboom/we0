@@ -45,5 +45,15 @@ export const modelConfig: ModelConfig[] = [
         description: 'deepseek-v3模型',   
         apiKey: process.env.THIRD_API_KEY,
         apiUrl: process.env.THIRD_API_URL,    
+    },
+
+    {
+        modelName: 'openrouter-google/gemini-2.0-flash-thinking ', 
+        modelKey: 'google/gemini-2.0-flash-thinking-exp:free',
+        useImage: false, 
+        provider: 'openrouter',
+        description: 'openrouter - google/gemini-2.0-flash-thinking',   
+        apiKey: process.env.THIRD_API_KEY,
+        apiUrl: process.env.THIRD_API_URL,    
     }
 ]
