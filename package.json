@@ -6,7 +6,9 @@
     "dev:next": "cd apps/we-dev-next && pnpm install && pnpm dev",
     "dev:admin": "cd apps/we-dev-admin && pnpm install && pnpm dev",
     "dev:client": "cd apps/we-dev-client  && pnpm dev",
-    "build:client": "cd apps/we-dev-client && pnpm builds"
+    "build:client": "cd apps/we-dev-client && pnpm builds",
+    "rebuild-native": "electron-rebuild -f -w node-pty lzma-native",
+    "postinstall": "python -m pip install setuptools"
   },
   "dependencies": {
     "fabric": "^6.5.4",
@@ -16,6 +18,13 @@
   },
   "devDependencies": {
     "axios": "^1.7.9",
-    "cheerio": "^1.0.0"
+    "cheerio": "^1.0.0",
+    "@electron/rebuild": "^3.6.0",
+    "electron-rebuild": "^3.2.9"
+  },
+  "build": {
+    "npmRebuild": true,
+    "beforeBuild": "node scripts/rebuild-native-modules.js",
+    "buildDependenciesFromSource": true
   }
 }

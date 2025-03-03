@@ -78,6 +78,17 @@ JWT_SECRET=
 
 ```
 
+## Fix node-pty Installation Issues on WIndows
+
+If you encounter issues installing node-pty during `pnpm install`, run the fix script:
+
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+./scripts/fix-node-pty.ps1
+```
+
+Then try running `pnpm install --force-resolutions` again. This flag is safer than using `--force` as it only affects dependency resolution.
+
 ## Build the Web Editor
 
 ```bash
