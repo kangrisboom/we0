@@ -1,6 +1,7 @@
 export enum Language {
   English = "en",
   "Chinese(Simplified)" = "zh-CN",
+  Indonesian = "id",
 }
 
 export const LanguageNativeNames: { name: string; locale: Language }[] = [
@@ -11,6 +12,10 @@ export const LanguageNativeNames: { name: string; locale: Language }[] = [
   {
     name: "简体中文",
     locale: Language["Chinese(Simplified)"],
+  },
+  {
+    name: "Bahasa Indonesia",
+    locale: Language.Indonesian,
   },
 ];
 

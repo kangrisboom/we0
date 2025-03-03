@@ -95,8 +95,8 @@ export function GeneralSettings() {
                 className="w-28 px-2.5 py-1.5 bg-white dark:bg-[#18181a] border border-border rounded-md text-foreground text-left flex justify-between items-center text-sm"
                 onClick={() => setLanguageOpen(!languageOpen)}
               >
-                
-                {formData.language === 'en' ? 'English' : '中文'}
+                {formData.language === 'en' ? 'English' : 
+                 formData.language === 'id' ? 'Indonesia' : '中文'}
                 <svg
                   className={`w-3.5 h-3.5 transition-transform ${
                     languageOpen ? 'transform rotate-180' : ''
@@ -121,6 +121,18 @@ export function GeneralSettings() {
                     }}
                   >
                     English
+                  </button>
+                  <button
+                    type="button"
+                    className="w-full px-2.5 py-1.5 text-left hover:bg-gray-100 dark:hover:bg-gray-700 text-sm text-foreground"
+                    onClick={() => {
+                      setFormData({ ...formData, language: 'id' });
+                      setLanguageOpen(false);
+                      i18n.changeLanguage('id');
+                      localStorage.setItem('language', 'id');
+                    }}
+                  >
+                    Indonesia
                   </button>
                   <button
                     type="button"

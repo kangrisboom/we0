@@ -1,4 +1,4 @@
-[![English](https://img.shields.io/badge/README-English-494cad.svg)](https://github.com/we0-dev/we0/blob/main/README.md) [![中文](https://img.shields.io/badge/README-中文-494cad.svg)](https://github.com/we0-dev/we0/blob/main/docs/README.zh.md) 
+[![English](https://img.shields.io/badge/README-English-494cad.svg)](https://github.com/we0-dev/we0/blob/main/README.md) [![中文](https://img.shields.io/badge/README-中文-494cad.svg)](https://github.com/we0-dev/we0/blob/main/docs/README.zh.md) [![Indonesia](https://img.shields.io/badge/README-Indonesia-494cad.svg)](https://github.com/we0-dev/we0/blob/main/docs/README.id.md)
 
 # we0
 
@@ -162,3 +162,4 @@ If you cannot join the WeChat group, you can add
    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=we0-dev/we0&type=Date" />
  </picture>
 </a>
+````

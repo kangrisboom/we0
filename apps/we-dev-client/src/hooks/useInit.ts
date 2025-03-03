@@ -41,8 +41,9 @@ const useInit = (): { isDarkMode: boolean } => {
         } else {
             // Get browser language settings
             const browserLang = navigator.language.toLowerCase()
-            // If Chinese environment (including simplified and traditional), set to Chinese, otherwise set to English
-            const defaultLang = browserLang.startsWith("zh") ? "zh" : "en"
+            // If Chinese environment or Indonesian, set accordingly, otherwise set to English
+            const defaultLang = browserLang.startsWith("zh") ? "zh" : 
+                              browserLang.startsWith("id") ? "id" : "en"
 
             i18n.changeLanguage(defaultLang)
             // Save to local settings

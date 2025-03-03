@@ -10,8 +10,14 @@ export const authService = {
             } else {
                 // Get browser language setting
                 const browserLang = navigator.language.toLowerCase()
-                // Set to Chinese if browser language is Chinese, otherwise English
-                language = browserLang.startsWith("zh") ? "zh" : "en"
+                // Set language based on browser language
+                if (browserLang.startsWith("zh")) {
+                    language = "zh"
+                } else if (browserLang.startsWith("id")) {
+                    language = "id"
+                } else {
+                    language = "en"
+                }
             }
         } catch (error) {
             console.log(error)
